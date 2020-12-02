@@ -34,7 +34,7 @@ public class Utility {
         BufferedReader reader = new BufferedReader(new FileReader(f));
         return reader.lines().collect(Collectors.toList());
     }
-    public static List<Integer> loadTextFileAsIntArray(final String name) throws Exception {
+    public static List<Integer> loadTextFileAsIntegerList(final String name) throws Exception {
         final URL path = ClassLoader.getSystemResource(name);
         if (path == null) {
             throw new Exception("Invalid text file: " + name);
